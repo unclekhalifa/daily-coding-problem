@@ -1,5 +1,5 @@
 const chapter1 = {
-    challenge1: function (input) {
+    challenge1: (input) => {
         const output = [];
         for (const [index] of input.entries()) {
             const tmpArr = [...input];
