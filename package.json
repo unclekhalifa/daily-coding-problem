@@ -1,0 +1,26 @@
+{
+  "name": "daily-coding-problem",
+  "version": "1.0.0",
+  "description": "Repo for the solutions of the daily coding problems book.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khalifa-is/daily-coding-problem.git"
+  },
+  "keywords": [
+    "coding-problems",
+    "challenge"
+  ],
+  "author": "Khalifa S",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khalifa-is/daily-coding-problem/issues"
+  },
+  "homepage": "https://github.com/khalifa-is/daily-coding-problem#readme",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  }
+}
