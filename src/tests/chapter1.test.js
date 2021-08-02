@@ -1,6 +1,7 @@
 const {
     challenge1,
-    challenge2
+    challenge2,
+    challenge3,
 } = require("../chapter1");
 
 describe("Chapter 1: Arrays", () => {
@@ -12,5 +13,12 @@ describe("Chapter 1: Arrays", () => {
 
     test("Locate smallest window to be sorted", () => {
         expect(challenge2([3, 7, 5, 6, 9])).toEqual([1, 3]);
+        expect(challenge2([1, 2, 7, 4, 5])).toEqual([2, 4]);
+    });
+
+    test("Calculate maximum subarray sum", () => {
+        expect(challenge3([34, -50, 42, 14, -5, 86])).toEqual(137);
+        expect(challenge3([-5, -1, -8, -9])).toEqual(0);
+        expect(challenge3([-5, 2, 3, -4])).toEqual(1);
     });
 });

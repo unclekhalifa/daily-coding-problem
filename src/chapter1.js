@@ -20,6 +20,22 @@ const chapter1 = {
             if (value !== sortedInput[index]) window.push(index);
         }
         return [window[0], window.slice(-1)[0]];
+    },
+
+    challenge3: (input) => {
+        let sum = 0;
+        let indexOfSum = -1;
+        for (const [index, value] of input.entries()) {
+            sum += value;
+            if (sum > 0 && indexOfSum === -1) indexOfSum = index;
+            if (sum < 0) {
+                sum = 0;
+                indexOfSum = -1;
+            }
+        }
+
+        if (indexOfSum === -1) return 0;
+        return input.slice(indexOfSum).reduce((total, num) => total + num);
     }
 };
 
