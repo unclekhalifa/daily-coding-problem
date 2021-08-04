@@ -2,6 +2,7 @@ const {
     challenge1,
     challenge2,
     challenge3,
+    challenge4
 } = require("../chapter1");
 
 describe("Chapter 1: Arrays", () => {

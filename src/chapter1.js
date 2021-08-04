@@ -36,6 +36,10 @@ const chapter1 = {
 
         if (indexOfSum === -1) return 0;
         return input.slice(indexOfSum).reduce((total, num) => total + num);
+    },
+
+    challenge4: () => {
+
     }
 };
 
