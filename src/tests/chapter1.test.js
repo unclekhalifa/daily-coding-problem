@@ -22,4 +22,8 @@ describe("Chapter 1: Arrays", () => {
         expect(challenge3([-5, -1, -8, -9])).toEqual(0);
         expect(challenge3([-5, 2, 3, -4])).toEqual(1);
     });
+
+    test("Find number of smaller elements to the right", () => {
+        expect(challenge4([3, 4, 9, 6, 1])).toEqual([1, 1, 2, 1, 0]);
+    });
 });

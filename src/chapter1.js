@@ -38,8 +38,18 @@ const chapter1 = {
         return input.slice(indexOfSum).reduce((total, num) => total + num);
     },
 
-    challenge4: () => {
+    challenge4: (input) => {
+        const output = [];
 
+        for (const [index, value] of input.entries()) {
+            let tracker = 0;
+            for (let i = index + 1; i < input.length; i ++) {
+                if (value > input[i]) tracker += 1;
+            }
+            output.push(tracker);
+        }
+
+        return output;
     }
 };
 
