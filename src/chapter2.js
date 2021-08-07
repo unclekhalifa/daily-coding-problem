@@ -1,6 +1,6 @@
 const chapter2 = {
     challenge1: (w, s) => {
-        // TODO: rework solution
+        
         const occurrences = [];
         let originalWord = s.slice();
         while (originalWord.indexOf(w) !== -1) {
