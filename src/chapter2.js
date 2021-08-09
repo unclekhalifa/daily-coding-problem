@@ -16,6 +16,10 @@ const chapter2 = {
         originalWord = s.split("").reverse().join("");
 
         return occurrences;
+    },
+
+    challenge2: () => {
+        
     }
 };
 
