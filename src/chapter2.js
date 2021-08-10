@@ -1,26 +1,19 @@
 const chapter2 = {
     challenge1: (w, s) => {
-        const occurrences = [];
-        let wLength = w.length;
-        let currentStrOccurrencePosition = 0;
-
-        let originalWord = s.slice();
-        while (originalWord.indexOf(w) !== -1) {
-            let index = originalWord.indexOf(w);
-            if (currentStrOccurrencePosition === 0) occurrences.push(index);
-            else occurrences.push(index + wLength);
-            currentStrOccurrencePosition = index + wLength;
-            originalWord = originalWord.replace(w, "");
+        const wSorted = chapter2.sortAlphabetical(w);
+        const output = [];
+        for (let i = 0; i < s.length + 1 - w.length; i++) {
+            if (chapter2.sortAlphabetical(s.slice(i, i + w.length)) === wSorted) output.push(i);
         }
-
-        originalWord = s.split("").reverse().join("");
-
-        return occurrences;
+        return output;
     },
 
     challenge2: () => {
-        
-    }
+
+    },
+
+    // Helper functions
+    sortAlphabetical: (x) => x.toLowerCase().split("").sort().join(""),
 };
 
 module.exports = chapter2;
