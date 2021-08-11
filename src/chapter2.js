@@ -8,9 +8,18 @@ const chapter2 = {
         return output;
     },
 
-    challenge2: () => {
-
+    challenge2: (input) => {
+        const output = [];
+        for (const [index, word] of [...input].entries()) {
+            for (const [i, w] of [...input].entries()) {
+                if (w === word) continue;
+                if (`${word + w}` === chapter2.reverseString(`${word + w}`)) output.push([index, i]);
+            }
+        }
+        return output;
     },
+
+    reverseString: (s) => s.split("").reverse().join(""),
 
     // Helper functions
     sortAlphabetical: (x) => x.toLowerCase().split("").sort().join(""),
