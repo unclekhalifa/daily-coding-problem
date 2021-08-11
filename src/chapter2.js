@@ -19,10 +19,10 @@ const chapter2 = {
         return output;
     },
 
-    reverseString: (s) => s.split("").reverse().join(""),
-
     // Helper functions
     sortAlphabetical: (x) => x.toLowerCase().split("").sort().join(""),
+
+    reverseString: (s) => s.split("").reverse().join("")
 };
 
 module.exports = chapter2;
