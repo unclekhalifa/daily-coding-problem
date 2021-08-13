@@ -19,6 +19,10 @@ const chapter2 = {
         return output;
     },
 
+    challenge3: (input) => {
+
+    },
+
     // Helper functions
     sortAlphabetical: (x) => x.toLowerCase().split("").sort().join(""),
 
