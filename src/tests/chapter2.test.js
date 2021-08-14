@@ -18,4 +18,8 @@ describe("Chapter 2: Strings", () => {
             ]
         );
     });
+
+    test("Print zigzag form", () => {
+
+    });
 });
