@@ -39,6 +39,11 @@ const chapter2 = {
         return true;
     },
 
+    // Pretty sure it's harder than that
+    challenge4: (str, k) => {
+        return str.slice(1) + str.split("")[0];
+    },
+
     // Helper functions
     sortAlphabetical: (x) => x.toLowerCase().split("").sort().join(""),
 
@@ -51,7 +56,5 @@ const chapter2 = {
 
     isDescending: (index, k) => index % (2 * (k - 1)) < k - 1
 };
-
-chapter2.challenge3("thisisazigzag", 4);
 
 module.exports = chapter2;

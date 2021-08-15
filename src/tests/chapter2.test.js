@@ -1,7 +1,8 @@
 const {
     challenge1,
     challenge2,
-    challenge3
+    challenge3,
+    challenge4
 } = require("../chapter2");
 
 describe("Chapter 2: Strings", () => {
@@ -21,6 +22,10 @@ describe("Chapter 2: Strings", () => {
     });
 
     test("Print zigzag form", () => {
-        expect(challenge3("thisisazigzag", 4)).toEqual(true);
+        expect(challenge3("thisisazigzag", 4)).toBe(true);
+    });
+
+    test("Determine smallest rotated string", () => {
+        expect(challenge4("daily", 1)).toBe("ailyd");
     });
 });
