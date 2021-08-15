@@ -1,6 +1,7 @@
 const {
     challenge1,
-    challenge2
+    challenge2,
+    challenge3
 } = require("../chapter2");
 
 describe("Chapter 2: Strings", () => {
@@ -20,6 +21,6 @@ describe("Chapter 2: Strings", () => {
     });
 
     test("Print zigzag form", () => {
-
+        expect(challenge3("thisisazigzag", 4)).toEqual(true);
     });
 });
