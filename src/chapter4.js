@@ -1,5 +1,17 @@
 const chapter4 = {
-    challenge1: () => {
+    challenge1: {
+
+        push: () => {
+
+        },
+
+        pop: () => {
+
+        },
+
+        max: () => {
+
+        }
 
     }
 };
