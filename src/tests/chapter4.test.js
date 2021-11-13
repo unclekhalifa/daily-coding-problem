@@ -15,4 +15,8 @@ describe("Chapter 4: Stacks & Queues", () => {
 
     });
 
+    test("Determine whether brackets are balanced", () => {
+
+    });
+
 });
