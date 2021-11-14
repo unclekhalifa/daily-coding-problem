@@ -18,6 +18,10 @@ const chapter4 = {
     },
 
     challenge2 (str) {
+    },
+
+    challenge3 () {
+
     }
 };
 
