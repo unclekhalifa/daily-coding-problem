@@ -12,11 +12,9 @@ describe("Chapter 4: Stacks & Queues", () => {
         // Check pop functionality
         expect(challenge1.pop()).toBe(4);
         expect(challenge1.pop()).toBe(-1);
-
     });
 
     test("Determine whether brackets are balanced", () => {
-
     });
 
 });

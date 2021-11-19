@@ -21,7 +21,6 @@ const chapter4 = {
     },
 
     challenge3 () {
-
     }
 };
 
