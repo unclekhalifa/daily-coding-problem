@@ -1,6 +1,6 @@
 const chapter5 = {
 	challenge1: () => {
-           console.log('hello');
+           console.log('hello world!');
         }
 
 };
